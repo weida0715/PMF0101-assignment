@@ -1,0 +1,215 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.nav {
+  background-color: rgb(148, 159, 206);
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+}
+
+.nav a {
+  display: block;
+  padding: 1.2rem 1rem;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 2rem;
+}
+
+.nav_logo {
+  color: #f2f2f2;
+  font-weight: bold;
+  list-style: none;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.nav_logo:hover {
+  color: #645CAA;
+}
+
+.nav_item {
+  list-style: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav_item a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.nav_item a:hover {
+  color: #645CAA;
+  transition: 0.15s;
+}
+
+.nav_item:hover ul, nav_item:focus ul {
+  color: #645CAA;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.15s;
+}
+
+.nav_dropdown {
+  position: absolute;
+  background-color: #BFACE0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav_dropdown a {
+  padding: 0.5rem;
+}
+
+.nav_dropdown li {
+  list-style: none;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/backgound\ image\ 2.png ");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+div.gallery {
+  border: 1px transparent;
+}
+
+div.gallery:hover {
+  border: 1px transparent;
+}
+
+div.gallery img {
+  width: 95%;
+  height: auto;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 5px;
+  float: left;
+  width: 33.3%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 33.33%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div {
+  font-family: "Georgia", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.zoom {
+  padding: 10px;
+  background-color: transparent;
+  transition: transform .2s;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+body {
+  font-family: Arial;
+  background-image: url("../image/backgound\ image\ 7.png");
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(167, 146, 215);
+  color: white;
+}
+
+.about, .contact {
+  margin: 0 auto;
+  /* Center website */
+  max-width: 850px;
+  /* Max width */
+  padding: 20px;
+}
+
+.a, .b {
+  line-height: 2;
+}

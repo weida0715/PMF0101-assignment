@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Feedback</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/feedback.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_logo">Bes-Tea</li>
+        <li class="nav_item"><a href="index.html">Home</a></li>
+        <li class="nav_item"><a href="menu.html">Menu</a>
+          <ul class="nav_dropdown">
+            <li><a href="menu.html">All</a></li>
+            <li><a href="beverage.html">Beverage</a></li>
+            <li><a href="snack.html">Snack</a></li>
+          </ul>
+        </li>
+        <li class="nav_item"><a href="contact.html">Contact</a></li>
+        <li class="nav_item"><a href="feedback.html">Feedback</a></li>
+        <li class="nav_item"><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <br>
+  <div class="rating">
+    <span class="heading"><b>User Rating</b></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <p>4.1 average based on 254 reviews.</p>
+    <hr style="border:3px solid #f1f1f1">
+
+    <div class="row">
+      <div class="side">
+        <div>5 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-5"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>150</div>
+      </div>
+      <div class="side">
+        <div>4 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-4"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>63</div>
+      </div>
+      <div class="side">
+        <div>3 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-3"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>15</div>
+      </div>
+      <div class="side">
+        <div>2 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-2"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>6</div>
+      </div>
+      <div class="side">
+        <div>1 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-1"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>20</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="review">
+    <u>
+      <h2>Customer Review</h2>
+    </u>
+
+    <p class="solid"><img src="image/boy.png" alt="Avatar" class="avatar">
+      <b>Teoh XXXX XXX</b><br>
+      <br>
+      Nice bubble tea and good snacks food
+    </p>
+
+    <p class="solid"><img src="image/boy.png" alt="Avatar" class="avatar">
+      <b>Ng XXX XX</b><br>
+      <br>
+      Fast service and friendly staff
+    </p>
+
+    <p class="solid"><img src="image/girl.png" alt="Avatar" class="avatar">
+      <b>Lam XXXX XX</b><br>
+      <br>
+      Wide range of drinks to order from.
+    </p>
+  </div>
+
+  <br>
+  <br>
+
+
+  <u>
+    <h2>Feedback Form</h2>
+  </u>
+
+  <div class="container">
+    <form action="action_page.php" method="post">
+
+      <div class="rating1">
+
+        <input type="radio" name="rating1" value="5" id="5"><label for="5">☆</label>
+        <input type="radio" name="rating1" value="4" id="4"><label for="4">☆</label>
+        <input type="radio" name="rating1" value="3" id="3"><label for="3">☆</label>
+        <input type="radio" name="rating1" value="2" id="2"><label for="2">☆</label>
+        <input type="radio" name="rating1" value="1" id="1"><label for="1">☆</label>
+
+      </div>
+
+      <label for="fname">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..">
+
+      <label for="lname">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email..">
+
+      <label for="feedback">Feedback</label>
+      <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+
+
+  </div>
+
+  <footer>
+    <p>Author: Hege Refsnes<br>
+      <a href="mailto:hege@example.com">hege@example.com</a>
+    </p>
+  </footer>
