@@ -1,0 +1,11 @@
+.about, .contact {
+  margin: 0 auto;
+  /* Center website */
+  max-width: 850px;
+  /* Max width */
+  padding: 20px;
+}
+
+.a, .b {
+  line-height: 2;
+}
