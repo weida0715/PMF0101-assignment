@@ -127,14 +127,14 @@ header {
 @media only screen and (max-width: 50.75em) {
   header {
     position: fixed;
-    padding: 1.5em 2em;
+    padding: 0 2em;
   }
 
   .menu {
     flex-flow: column;
     position: absolute;
     background: hsla(0, 0%, 30%, 0.8);
-    top: 7.5em;
+    top: 4.3rem;
     left: 0;
     right: 0;
     height: 100vh;
@@ -175,7 +175,6 @@ header {
     background: var(--light);
     position: relative;
     cursor: pointer;
-    transition: 0.2s transform ease-in-out;
   }
 
   .hamburger::after, .hamburger::before {
@@ -185,7 +184,6 @@ header {
     background: inherit;
     width: inherit;
     height: inherit;
-    transition: 0.2s transform ease-in-out;
   }
 
   .hamburger::after {
@@ -194,24 +192,6 @@ header {
 
   .hamburger::before {
     bottom: 0.65em;
-  }
-
-  .close::after, .close::before {
-    top: 0;
-    transition: 0.2s transform ease-in-out;
-  }
-
-  .close::before {
-    display: none;
-  }
-
-  .close {
-    transform: rotate(45deg);
-    transition: 0.2s transform ease-in-out;
-  }
-
-  .close::after {
-    transform: rotate(-90deg);
   }
 
   /*reveal menu*/
