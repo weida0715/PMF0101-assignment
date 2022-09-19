@@ -6,25 +6,20 @@
   --light: #EEF3D2;
 }
 
-body, html {
-  background-image: url("../image/background image 7.png");
-  height: 100%;
-  margin: 0;
-  font-size: 1em;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 *, *::after, *::before {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: rgb(167, 146, 215);
-  color: white;
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
 }
 
 /**********************Navigation Bar - START**********************/
@@ -37,6 +32,8 @@ header {
 }
 
 .branding-logo {
+  font-family: "Lucida Handwriting", "cursive", monospace;
+  font-weight:bold;
   color: var(--light);
   text-decoration: none;
 }
@@ -204,11 +201,12 @@ header {
 /**********************Navigation Bar - END**********************/
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/background image 2.png ");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/backgound\ image\ 2.png ");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .hero-text {
@@ -220,11 +218,17 @@ header {
   color: white;
 }
 
+.hero-text h1 {
+  font-family: "Lucida Handwriting", "cursive", monospace;
+  font-weight: bold;
+}
+
+
 .hero-text button {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 10px 25px;
+  padding: 5px 15px;
   color: black;
   background-color: #ddd;
   text-align: center;
@@ -236,43 +240,48 @@ header {
   color: white;
 }
 
-div.gallery {
+
+
+div {
+font-family: "Georgia", serif;}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial;
+  background-image: url("../image/backgound\ image\ 7.png");
+}
+
+div.feedimage {
   border: 1px transparent;
 }
 
-div.gallery:hover {
+div.feedimage:hover {
   border: 1px transparent;
 }
 
-div.gallery img {
-  width: 95%;
+div.feedimage img {
+  width: 100%;
   height: auto;
-}
-
-div.desc {
-  padding: 5px;
-  text-align: center;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.responsive {
-  padding: 5px;
-  float: left;
-  width: 33.3%;
-}
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 33.33%;
-    margin: 6px 0;
+@media only screen and (max-width: 700px),(max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+  .promo,.promo1,.feedimage{
+    margin: 0 auto;
+    width: 10%;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .responsive {
+@media only screen and (max-width: 500px),(max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+  .promo,.promo1,.feedimage{
     width: 100%;
   }
 }
@@ -283,40 +292,17 @@ div.desc {
   clear: both;
 }
 
-div {
-  font-family: "Georgia", serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.zoom {
-  padding: 10px;
-  background-color: transparent;
-  transition: transform .2s;
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-}
-
-.zoom:hover {
-  -ms-transform: scale(1.5);
-  /* IE 9 */
-  -webkit-transform: scale(1.5);
-  /* Safari 3-8 */
-  transform: scale(1.5);
-}
-
-
-.about, .contact {
-  margin: 0 auto;
-  /* Center website */
-  max-width: 850px;
-  /* Max width */
+.promo,.promo1,.feedimage{
+  margin: 0 auto; /* Center website */
+  max-width: 800px; /* Max width */
   padding: 20px;
+  background-color:transparent;
+  transition: transform .2s;
+
 }
 
-.a, .b {
-  line-height: 2;
+.promo:hover,.promo1:hover,.feedimage{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
 }
