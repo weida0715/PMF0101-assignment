@@ -383,17 +383,11 @@
     </div>
   </section>
   
-  <iframe src="C:\Users\Wei Da\Downloads\willie hao sheng yin.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-  </iframe>
-
-  <script type="text/javascript">
-    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if (!isChrome) {
-      $('#iframeAudio').remove()
-    } else {
-      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-    }
-  </script>
+  <iframe src="250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+  
+  <audio id="player" autoplay loop>
+    <source src="willie hao sheng yin.mp3" type="audio/mp3">
+  </audio>
 </body>
 
 <!--footer starts from here-->
