@@ -1,0 +1,26 @@
+.about-us {
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+.about-us h1 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.history p {
+  padding: 0 6rem;
+  margin: 0 auto;
+}
+
+.shop-background img {
+  display: block;
+  height: 30rem;
+  margin: auto;
+}
+
+.operation-hours img{
+  display: block;
+  width: 30rem;
+  margin: auto;
+}
