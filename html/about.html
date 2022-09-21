@@ -1,57 +1,105 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>About Us</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="branding">
-          <h2 class="logo">
-            <a href="#" class="branding-logo">Bes-Tea</a>
-          </h2>
-        </div>
-        <label for="input-hamburger" class="hamburger"></label>
-        <input type="checkbox" id="input-hamburger" hidden>
-        <ul class="menu">
-          <li><a href="index.html" class="menu-link">Home</a></li>
-          <li><a href="about.html" class="menu-link">About</a></li>
-          <li class="has-dropdown">
-            <a class="menu-link">Menu
-              <span class="arrow"></span>
-            </a>
-            <ul class="submenu">
-              <li><a href="menu.html" class="menu-link">All</a></li>
-              <li class="has-dropdown">
-                <a href="menu.html#Beverage" class="menu-link">Beverage
-                  <span class="arrow"></span>
-                </a>
-                <ul class="submenu">
-                  <li><a href="menu.html#Beverage-Porpular" class="menu-link">Porpular</a></li>
-                  <li><a href="menu.html#Beverage-Special" class="menu-link">Special</a></li>
-                  <li><a href="menu.html#Beverage-Other" class="menu-link">Other</a></li>
-                </ul>
-              </li>
-              <li class="has-dropdown">
-                <a href="menu.html#Snack" class="menu-link">Snack
-                  <span class="arrow"></span>
-                </a>
-                <ul class="submenu">
-                  <li><a href="menu.html#Snack-Porpular" class="menu-link">Porpular</a></li>
-                  <li><a href="menu.html#Snack-Special" class="menu-link">Special</a></li>
-                  <li><a href="menu.html#Snack-Other" class="menu-link">Other</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="feedback.html" class="menu-link">Feedback</a></li>
-          <li><a href="cart.html" class="menu-link">Cart</a></li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>About Us</title>
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="branding">
+        <h2 class="logo">
+          <a href="#" class="branding-logo">Bes-Tea</a>
+        </h2>
+      </div>
+      <label for="input-hamburger" class="hamburger"></label>
+      <input type="checkbox" id="input-hamburger" hidden>
+      <ul class="menu">
+        <li><a href="index.html" class="menu-link">Home</a></li>
+        <li><a href="about.html" class="menu-link">About</a></li>
+        <li class="has-dropdown">
+          <a class="menu-link">Menu
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="menu.html" class="menu-link">All</a></li>
+            <li class="has-dropdown">
+              <a href="menu.html#Beverage" class="menu-link">Beverage
+                <span class="arrow"></span>
+              </a>
+              <ul class="submenu">
+                <li><a href="menu.html#Beverage-Popular" class="menu-link">Popular</a></li>
+                <li><a href="menu.html#Beverage-Special" class="menu-link">Special</a></li>
+                <li><a href="menu.html#Beverage-Other" class="menu-link">Other</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="menu.html#Snack" class="menu-link">Snack
+                <span class="arrow"></span>
+              </a>
+              <ul class="submenu">
+                <li><a href="menu.html#Snack-Popular" class="menu-link">Popular</a></li>
+                <li><a href="menu.html#Snack-Special" class="menu-link">Special</a></li>
+                <li><a href="menu.html#Snack-Other" class="menu-link">Other</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="feedback.html" class="menu-link">Feedback</a></li>
+        <li><a href="cart.html" class="menu-link">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-us">
+    <div class="shop-background">
+      <img src="../image/shop_background.jpg">
+      <p><em>A view of our shop</em></p>
+    </div>
+
+    <div class="history">
+      <h1>Our History</h1>
+      <p>Bes-Tea was established by three coworkers who decided on the spur of the moment to launch a company. The first day of business for Bes-tea was April 4th, 2021. Additionally, the organization is currently planning to expand internationally.
+        Our food and beverages don't include any chemicals or artificial coloring. Bes-Tea also have a HALAL certificate that is given by JAKIM(Jabatan Kemajuan Islam Malaysia) so our Malay friend can also enjoy our beverages and food. Our stores are
+        located at various places in Klang Valley. So head on to the nearest store to grab your beverages and food with your bes-tea</p>
+    </div>
+
+    <div class="">
+      <h1>Making of Our <em>Bes-Tea</em></h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gk-fUas5VsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="operation-hours">
+      <h1>Operation Hours</h1>
+      <img src="../image/operation hours.png">
+    </div>
+  </section>
+
+</body>
+
+<!--footer starts from here-->
+<footer class="footer">
+  <div class="container">
+    <ul class="foote_bottom_ul_amrc">
+      <p><i class="fa fa-location-arrow"></i> TANJUNG RAMBUTAN </p>
+      <p><i class="fa fa-phone"></i> 0102020873 </p>
+      <p><i class="fa fa fa-envelope"></i> 1211106712@example.com </p>
+    </ul>
+    <!--foote_bottom_ul_amrc ends here-->
+    <div class="copyright">
+      <p>
+        <center>Copyright <span>&copy;</span> 2022 | Designed by <a href="">BES-TEA</a></center>
+      </p>
+    </div>
+  </div>
+</footer>
+
 </html>
